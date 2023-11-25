@@ -16,12 +16,11 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
-
-    <div class="container">
+    <div class="img-home">
         <header>
             <nav class="navbar">
                 <h2 class="logo"> Bem-Vindo </h2>
@@ -29,30 +28,80 @@
                     <li class="nav-item"> <a href="#" class="nav-link">Sobre</a> </li>
                     <li class="nav-item"> <a href="#" class="nav-link">Projetos</a> </li>
                     <li class="nav-item"> <a href="#" class="nav-link">Serviços</a> </li>
-                    <li class="nav-item"> <a href="#" class="nav-link">Skils</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">Contato</a> </li>
                 </ul>
             </nav>
         </header>
 
-        <section class="hero">
-            <img src="/src/assets/img/profile.png" alt="" width="300" height="300">
-
+        <section class="hero container">
+            <img src="/src/img/profile.png" alt="">
             <div class="text">
-                <h2> Confie em Deus </h2>
-                <h3> e no seu progresso! </h3>
-                <p> Olá, eu sou o Wesley Pereira Saraiva! </p>
-                <a href="#"> Sobre min </a>
+                <h2> Olá, eu sou o Dev <span> Wesley !</span> </h2>
+                <h3> Confie em Deus </h3>
+                <h4> e no seu progresso! </h4>
+                <a href="#about" class="btn-hero"> Sobre min </a>
             </div>
-
             <div class="social">
-                <a href="#"> <i class="fa-brands fa-instagram fa-xl"> </i> </a>
-                <a href="#"> <i class="fa-brands fa-github fa-xl"> </i> </a>
-                <a href="#"> <i class="fa-brands fa-linkedin fa-xl"> </i> </a>
+                <a href="#"> <i class="fa-brands fa-instagram fa-2x"> </i> </a>
+                <a href="#"> <i class="fa-brands fa-github fa-2x"> </i> </a>
+                <a href="#"> <i class="fa-brands fa-linkedin fa-2x"> </i> </a>
+            </div>
+        </section>
+    </div>
 
+    <main class="container">
+        <section class="about" id="about">
+            <h3> Sobre mim </h3>
+            <div class="about-content">
+                <div class="about-text">
+                    <p> Oi, tudo bem? Espero que sim! Eu sou o Wesley, estudante eterno de tecnologia, digo isso pois
+                        estou
+                        sempre buscando aprender novas habilidades que só a tecnologia é capaz de promover com todas
+                        as novidades sao lançadas no mercado.
+                        <br> <br>
+                        Minha jornada começa desde criança com uma curiosidade imensa de saber como as coisas
+                        funcionavam
+                        e essa curiosidade fazia com que eu abrisse eletrônicos só para saber como era por dentro, como
+                        eram
+                        montado e etc. Assim, eu escolhi participar de um colégio técnico, onde claro, escolhi a
+                        informática.
+                        Foram os 3 anos mais incríveis da minha vida, pois foi onde eu realmente abri minha mente e
+                        comecei
+                        a
+                        aprender realmente como as coisas funcionavam. Depois fiz uma faculdade de Análise e
+                        Desenvolvimentismo
+                        de Sistemas e atualmente além de trabalhar com vendas e ser técnico em informática eu desenvolvo
+                        sites e
+                        aplicativos.
+                        <br> <br>
+                        Enfim, essa é um pouco da minha história e onde estou aberto a novas oportunidade de trabalho
+                        para
+                        que
+                        possa
+                        contribuir, aprender e crescer. Se tiver uma oportunidade que corresponda às minhas competências
+                        e
+                        experiência,
+                        não hesite em contatar-me.
+                    </p>
+
+                </div>
+
+                <div class="skill">
+                    <span class="title-skill"> Skills </span>
+                    <ul class="list_skils">
+                        <li class="skill-name">HTML</li>
+                        <li class="skill-name"">CSS</li>
+                        <li class=" skill-name"">JS</li>
+                        <li class="skill-name"">React</li>
+                        <li class=" skill-name"">Wordpress</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-    </div>
+    </main>
+
+    <script src="/src/js/script.js"></script>
 
 </body>
 
