@@ -1,19 +1,19 @@
-// Select button
-var button = document.getElementById('read_button');
+//----------------ABOUT-TAB-----------------
+document.getElementById("defaultOpen").click();
 
-// Click Event
-button.addEventListener('click', function () {
-    // Select card
-    var card = document.querySelector('.card');
+function openTab(evt, Linkname) {
+    var i, tabcontent, tablinks;
 
-    // Add/Remove Class Active
-    card.classList.toggle('active');
-
-    if (card.classList.contains('active')) {
-        // Change button text if has class active
-        return button.textContent = 'Read less';
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
 
-    // Change button text if hasn't class active
-    button.textContent = 'Read more';
-});
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(Linkname).style.display = "block";
+    evt.currentTarget.className += " active";
+}
