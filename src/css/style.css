@@ -231,22 +231,33 @@ body::-webkit-scrollbar-thumb {
     color: var(--white-color);
 }
 
-.about-img {
-    flex-basis: 35%;
+.about-title {
+    margin: 100px 0 20px 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white-color);
+    text-align: center;
+    border-radius: 20px;
+    background: var(--background-color);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -5px -5px 15px rgb(25, 25, 25);
 }
 
-.about-img img {
+.about-img-col-1 {
+    flex-basis: 40%;
+}
+
+.about-img-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
 
-.about-title {
-    flex-basis: 60%;
+.about-col-2 {
+    flex-basis: 55%;
 }
 
-.about-title h1 {
-    font-size: 60px;
-    font-weight: 700;
+.about-col-2 p {
+    font-size: 16px;
 }
 
 .tab {
@@ -284,11 +295,16 @@ body::-webkit-scrollbar-thumb {
 .tabcontent {
     display: none;
     color: var(--white-color);
-    padding: 25px 25px;
     border-radius: 20px;
     background: var(--background-color);
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
         -5px -5px 15px rgb(25, 25, 25);
+}
+
+.tabcontent p,
+li {
+    text-align: justify;
+    padding: 25px 25px;
 }
 
 .tabcontent ul li {
@@ -303,4 +319,22 @@ body::-webkit-scrollbar-thumb {
     color: var(--blue-color);
     font-weight: 600;
     font-size: 14px;
+}
+
+.expand {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.expander {
+    position: absolute;
+    background: rgba(3, 169, 244, 0.45);
+    backdrop-filter: blur(2.9px);
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    cursor: row-resize;
 }
