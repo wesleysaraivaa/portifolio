@@ -565,3 +565,79 @@ li {
 .projetos-cards:hover .overlay::after {
     transform: translate(-50%, -50%) scale(2);
 }
+
+/*  --------------------CONTACT------------------------*/
+
+.contact {
+    margin-top: 150px;
+    margin-bottom: 300px;
+    color: var(--white-color);
+}
+
+.title-contact {
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-row-1,
+.contact-row-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-social {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-social i {
+    color: var(--white-color);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    position: relative;
+    --primary: var(--blue-color);
+}
+
+.input {
+    all: unset;
+
+    padding: 1rem;
+    border: 1px solid var(--white-color-secundaria);
+    border-radius: 10px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--white-color-secundaria);
+    pointer-events: none;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus {
+    border: 1px solid var(--blue-color)
+}
+
+.input:is(:focus, :valid)~label {
+    transform: translateY(-120%) scale(0.7);
+    background-color: #1a1a1a;
+    padding-inline: 0.3rem;
+    color: var(--blue-color);
+}
