@@ -211,12 +211,19 @@
             <h1 class="title-contact"> Contato </h1>
             <div class="contact-content">
                 <div class="contact-row-1">
-                    <h3> Se preferir pode me mandar um email </h3>
-                    <div class="contact-social">
-                        <a href="#"> <i class="fa-brands fa-whatsapp fa-2x"> </i> </a>
-                        <a href="#"> <i class="fa-brands fa-instagram fa-2x"> </i> </a>
-                        <a href="#"> <i class="fa-brands fa-github fa-2x"> </i> </a>
-                        <a href="#"> <i class="fa-brands fa-linkedin fa-2x"> </i> </a>
+                    <h3> Se preferir pode me mandar um email: </h3>
+                    <div class="contact-copy-email">
+                        <input type="text" class="copy-email-input" value="wesley@gmail.com" readonly="true">
+                        <button type="button" class="copy-email-button">
+                            <i class="fa-regular fa-copy fa-2x""></i>
+                        </button>
+                    </div>
+                    <h4> Minhas Redes sociais: </h4>
+                    <div class=" contact-social">
+                                <a href="#"> <i class="fa-brands fa-whatsapp fa-2x"> </i> </a>
+                                <a href="#"> <i class="fa-brands fa-instagram fa-2x"> </i> </a>
+                                <a href="#"> <i class="fa-brands fa-github fa-2x"> </i> </a>
+                                <a href="#"> <i class="fa-brands fa-linkedin fa-2x"> </i> </a>
                     </div>
                 </div>
                 <div class="contact-row-2">
@@ -226,12 +233,17 @@
                         <label class="label" for="username">Nome</label>
                     </div>
                     <div class="input-group">
+                        <input class="input" required autocomplete="off" type="text" name="email" id="email">
+                        <label class="label" for="assunto">E-mail</label>
+                    </div>
+                    <div class="input-group">
                         <input class="input" required autocomplete="off" type="text" name="assunto" id="assunto">
                         <label class="label" for="assunto">Assunto</label>
                     </div>
                     <div class="input-group">
-                        <textarea name="assunto" id="" cols="30" rows="10"></textarea>
-                        <label class="label" for="assunto">Assunto</label>
+                        <textarea class="input" required autocomplete="off" type="text" name="mensagem" id="mensagem"
+                            cols="20" rows="5"></textarea>
+                        <label class="label" for="assunto">Mensagem</label>
                     </div>
                 </div>
             </div>

@@ -51,3 +51,23 @@ function createExpander(container) {
 document.querySelectorAll('.expand').forEach(function (elem) {
     createExpander(elem);
 });
+
+//----------------CONTACT-COPY-EMAIL-----------------
+document.querySelectorAll(".contact-copy-email").forEach(copyEmailContainer => {
+    const copyInput = copyEmailContainer.querySelector(".copy-email-input");
+    const copyButton = copyEmailContainer.querySelector(".copy-email-button");
+
+
+    copyInput.addEventListener("focus", () => copyInput.select());
+
+    copyButton.addEventListener("click", () => {
+        const text = copyInput.value;
+
+        copyInput.select();
+        navigator.clipboard.writeText(text);
+
+        copyInput.value = "Copiado!";
+        setTimeout(() => copyInput.value = text, 2000);
+    })
+});
+
