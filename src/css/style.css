@@ -1,10 +1,11 @@
 :root {
     --sb-size: 10px;
     --sb-track-color: #063044;
+
     --white-color: #FFFF;
     --black-color: #000000;
     --background-color: #1E1E1E;
-    --blue-color: #03a9f4;
+    --blue-color: rgba(3, 169, 244, 1.000);
     --white-color-secundaria: rgb(255 255 255 / 75%);
     --bg-cards: rgb(16 16 16);
 }
@@ -17,7 +18,7 @@
 
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
     font-family: 'Space Mono', monospace;
     background: var(--background-color);
@@ -92,7 +93,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-menu {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .navbar ul li {
@@ -101,7 +102,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-link {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--white-color);
     position: relative;
 }
@@ -122,23 +123,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*  --------------------HERO------------------------*/
-
 .hero {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 25px;
-    margin-top: 160px;
 }
 
-.hero img {
-    width: 25rem;
-    height: 25rem;
+.text img {
+    width: 200px;
+    height: 200px;
     border-radius: 53% 47% 70% 30% / 36% 30% 70% 64%;
 }
 
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15%;
+    gap: 20px;
+}
+
 .text h1 {
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 800;
     color: var(--white-color);
     line-height: 1em;
@@ -148,39 +155,27 @@ body::-webkit-scrollbar-thumb {
     color: var(--blue-color);
 }
 
-.text h2 {
-    margin-top: 10px;
-    font-size: 75px;
+.text p {
+    font-size: 17px;
     color: var(--white-color);
-    line-height: 1em;
-    text-transform: uppercase;
+    text-align: center;
 }
 
 .text h3 {
-    font-size: 70px;
+    font-size: 60px;
     margin-top: -15px;
     color: var(--white-color);
     line-height: 1em;
     text-transform: uppercase;
 }
 
-.text p {
-    font-size: 17.6px;
-    color: var(--white-color);
-    margin: 20px 0;
-    font-weight: 400;
-    max-width: 700px;
-}
-
 .text a {
-    display: inline-block;
-    font-size: 1em;
+    font-size: 24px;
     color: var(--white-color);
-    padding: 10px 30px;
     text-transform: uppercase;
     text-decoration: none;
-    margin-top: 20px;
-    color: var(--white-color);
+    font-size: 1em;
+    padding: 10px 20px;
     background-image: linear-gradient(to bottom, #0baff9, #3bade8, #54aad7, #68a7c6, #78a3b7);
     letter-spacing: 2px;
     transition: 0.9s;
@@ -195,12 +190,11 @@ body::-webkit-scrollbar-thumb {
 
 .social {
     position: absolute;
-    z-index: 10;
-    bottom: 25px;
+    z-index: 999;
+    bottom: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 25px;
+    align-items: center;
 }
 
 .social i {
@@ -237,22 +231,24 @@ body::-webkit-scrollbar-thumb {
     color: var(--white-color);
 }
 
-.about-img-col-1 {
-    flex-basis: 40%;
+.about-col-1 {
+    max-width: 900px;
+    flex-basis: 50%;
 }
 
-.about-img-col-1 img {
-    width: 100%;
+.about-col-1 p {
+
+    font-size: 14px;
+}
+
+.about-img-col-2 {
+    max-width: 600px;
+    flex-basis: 45%;
+}
+
+.about-img-col-2 img {
+    max-width: 500px;
     border-radius: 10px;
-
-}
-
-.about-col-2 {
-    flex-basis: 55%;
-}
-
-.about-col-2 p {
-    font-size: 16px;
 }
 
 .about-tab {
@@ -299,11 +295,15 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-
 .tabcontent p,
 li {
+    padding: 15px 25px;
+}
+
+.about-content p,
+li {
     text-align: justify;
-    padding: 25px 25px;
+    font-size: 14px;
 }
 
 .tabcontent ul li {
@@ -331,7 +331,7 @@ li {
 .expander {
     position: absolute;
     background: rgba(3, 169, 244, 0.45);
-    backdrop-filter: blur(2.9px);
+    backdrop-filter: blur(2.8992px);
     bottom: 0;
     width: 100%;
     height: 25px;
@@ -352,24 +352,18 @@ li {
 
 .services-content {
     display: flex;
-    flex-wrap: nowrap;
-    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
 .services-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
     position: relative;
+    max-width: 800px;
     background-color: var(--bg-cards);
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
         -5px -5px 15px rgb(25, 25, 25);
     border-radius: 10px;
-    padding: 1rem;
 }
 
 .services-card:after {
@@ -395,15 +389,13 @@ li {
 .card-content {
     display: flex;
     gap: 15px;
+    height: 250px;
     flex-direction: column;
-    justify-content: center;
     background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px,
             transparent 1px);
-    background-position: 50% 50%;
     background-size: 1.1rem 1.1rem;
-    padding: 2.3rem;
-    border-radius: 1.25rem;
-    overflow: hidden;
+    margin: 10px;
+    padding: 30px;
     border-radius: 10px;
 }
 
@@ -414,12 +406,12 @@ li {
 .card-content h2 {
     color: var(--white-color);
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 18px;
 }
 
 .card-content p {
     color: rgb(255 255 255 / 75%);
-    line-height: 1.3rem;
+    line-height: 14px;
 }
 
 .card-content a {
@@ -441,7 +433,6 @@ li {
 /*  --------------------PROJETOS------------------------*/
 .projetos {
     margin-top: 150px;
-    margin-bottom: 300px;
 }
 
 .projetos-title {
@@ -456,17 +447,16 @@ li {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 20px;
 }
 
 .projetos-cards {
     position: relative;
-    width: 600px;
-    height: 450px;
+    width: 400px;
+    height: 350px;
     display: flex;
-    text-align: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -478,12 +468,13 @@ li {
 }
 
 .projetos-cards h3 {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 700;
     color: var(--blue-color);
 }
 
 .projetos-cards p {
+    font-size: 14px;
     color: var(--white-color-secundaria);
     line-height: 1.2;
 }
@@ -506,7 +497,7 @@ li {
 }
 
 .card-btn {
-    width: 190px;
+    width: 170px;
 }
 
 .card-btn i {
@@ -558,7 +549,7 @@ li {
     transform: translate(-50%, -50%) scale(0);
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(-15deg, var(--blue-color) 40%, rgb(3, 33, 73) 60%);
+    background-image: linear-gradient(-15deg, var(--blue-color) 40%, rgb(151, 183, 221) 60%);
     transition: transform 0.1s ease;
 }
 
@@ -567,11 +558,30 @@ li {
 }
 
 /*  --------------------CONTACT------------------------*/
+.bg-contact {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-contact::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-image: linear-gradient(to top, rgba(34, 35, 36, 0.3), #1E1E1E), url(/src/img/Background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+
+}
 
 .contact {
     margin-top: 150px;
-    margin-bottom: 300px;
-    color: var(--white-color);
 }
 
 .title-contact {
@@ -584,36 +594,59 @@ li {
 .contact-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.contact-row-1,
+.contact-row-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 20%;
+    gap: 50px;
+}
+
+.contact-row-1-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .contact-row-2 {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    max-width: 800px;
+    flex-basis: 65%;
+    gap: 20px;
 }
 
 .contact-row-1,
 .contact-row-2 h3 {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--white-color);
 }
 
 .contact-copy-email {
-    --height: 36px;
+    height: 40px;
     display: flex;
-    max-width: 250px;
 }
 
 .copy-email-input {
     flex-grow: 1;
     padding: 0 8px;
-    font-size: 24px;
-    background-color: var(--background-color);
-    color: var(--white-color);
-    border: 1px solid var(--white-color);
+    font-size: 18px;
+    background-image: linear-gradient(to bottom, #0baff9, #3bade8, #54aad7, #68a7c6, #78a3b7);
+    color: var(--black-color);
+    border: 1px solid var(--blue-color);
     border-right: none;
     outline: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.copy-email-input {
+    color: var(--white-color);
 }
 
 .copy-email-input:hover {
@@ -621,27 +654,27 @@ li {
 }
 
 .copy-email-button {
+    color: var(--white-color);
     flex-shrink: 0;
-    width: var(--height);
-    height: var(--height);
     display: flex;
     justify-content: center;
     align-items: center;
     outline: none;
-    background-color: var(--white-color-secundaria);
-    border: 1px solid var(--white-color);
+    background-image: linear-gradient(to bottom, #0baff9, #3bade8, #54aad7, #68a7c6, #78a3b7);
+    border: 1px solid var(--blue-color);
     cursor: pointer;
-
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-right: 10px;
 }
 
 .copy-email-button:hover {
-    background-color: var(--blue-color);
+    background-color: var(--black-color);
 }
 
 .contact-social {
     display: flex;
-    gap: 30px;
-
+    gap: 20px;
 }
 
 .contact-social i {
@@ -657,7 +690,7 @@ li {
 .input-group {
     display: flex;
     flex-direction: column;
-    font-size: 1.25rem;
+    font-size: 16px;
     position: relative;
     color: var(--blue-color);
 }
@@ -686,6 +719,31 @@ li {
 .input:is(:focus, :valid)~label {
     transform: translateY(-120%) scale(0.7);
     background-color: #1a1a1a;
-    padding-inline: 0.3rem;
+    padding-inline: .3rem;
     color: var(--blue-color);
+}
+
+.contact-row-2 button {
+    font-size: 24px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #0baff9, #3bade8, #54aad7, #68a7c6, #78a3b7);
+    letter-spacing: 2px;
+    transition: 0.9s;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*  --------------------FOOTER------------------------*/
+
+.footer {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+    color: #3bade8;
+
 }
