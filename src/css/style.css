@@ -209,9 +209,6 @@ body::-webkit-scrollbar-thumb {
 
 /*  --------------------ABOUT------------------------*/
 
-.about {
-    margin-top: 150px;
-}
 
 .about-title {
     margin-bottom: 50px;
@@ -228,12 +225,12 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 150px;
     color: var(--white-color);
 }
 
 .about-col-1 {
-    max-width: 900px;
-    flex-basis: 50%;
+    flex-basis: 55%;
 }
 
 .about-col-1 p {
@@ -242,13 +239,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-img-col-2 {
-    max-width: 600px;
-    flex-basis: 45%;
+    flex-basis: 20%;
 }
 
 .about-img-col-2 img {
-    max-width: 500px;
+    width: 400px;
+    min-width: 450px;
     border-radius: 10px;
+    filter: brightness(0.5);
 }
 
 .about-tab {
@@ -322,7 +320,7 @@ li {
 
 .expand {
     position: relative;
-    height: 350px;
+    height: 180px;
     overflow: hidden;
     padding-bottom: 30px;
     text-align: center;
@@ -443,18 +441,14 @@ li {
 }
 
 .projetos-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(min(25rem, 50%), 1fr));
+    grid-gap: 50px;
 }
 
 .projetos-cards {
     position: relative;
-    width: 400px;
-    height: 350px;
-    display: flex;
     flex-direction: column;
     gap: 10px;
     overflow: hidden;
@@ -561,7 +555,6 @@ li {
 .bg-contact {
     position: relative;
     width: 100%;
-    height: 100vh;
 }
 
 .bg-contact::before {
@@ -571,7 +564,7 @@ li {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
     background-image: linear-gradient(to top, rgba(34, 35, 36, 0.3), #1E1E1E), url(/src/img/Background2.png);
     background-size: cover;
@@ -742,8 +735,24 @@ li {
 
 .footer {
     text-align: center;
-    font-size: 40px;
-    margin-top: 150px;
-    color: #3bade8;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
 
+.footer div {
+    width: 100%;
+    border-top: 1px solid var(--background-color);
+}
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+.footer a {
+    font-size: 18px;
+    background-image: linear-gradient(to bottom, #0baff9, #3bade8, #54aad7, #68a7c6, #78a3b7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

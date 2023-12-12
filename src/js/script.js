@@ -40,7 +40,7 @@ function createExpander(container) {
             elem.innerHTML = 'Mais';
             elem.className = 'expander show';
 
-            container.style.height = '350px';
+            container.style.height = '180px';
         }
     });
 
