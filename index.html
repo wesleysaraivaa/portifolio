@@ -20,26 +20,28 @@
 </head>
 
 <body>
-    <div class="img-home">
-        <header>
+
+    <header id="header">
+        <div class="menu">
             <nav class="navbar">
-                <h2 class="logo"> Bem-Vindo </h2>
+                <img class="logo" src="/src/img/Logo Uni.png" alt="">
                 <ul class="nav-menu">
-                    <li class="nav-item"> <a href="#" class="nav-link">Sobre</a> </li>
-                    <li class="nav-item"> <a href="#" class="nav-link">Serviços</a> </li>
-                    <li class="nav-item"> <a href="#" class="nav-link">Projetos</a> </li>
-                    <li class="nav-item"> <a href="#" class="nav-link">Contato</a> </li>
+                    <li class="nav-item"> <a href="#about" class="nav-link">Sobre</a> </li>
+                    <li class="nav-item"> <a href="#servicos" class="nav-link">Serviços</a> </li>
+                    <li class="nav-item"> <a href="#projetos" class="nav-link">Projetos</a> </li>
+                    <li class="nav-item"> <a href="#contato" class="nav-link">Contato</a> </li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
+    <div class="img-home">
         <section class="hero container">
-
+            <img src="/src/img/Documento de saraivaa.jpg" alt="">
             <div class="text">
-                <img src="/src/img/Documento de saraivaa.jpg" alt="">
                 <h1> Olá, eu sou o <span> Wesley ✌</span> </h1>
                 <p> Desenvolvedor web e app front-end. Disponivel para freelances e totalmente disposto para tornar seu
-                    negocio ou projeto pessoal mais incrivel do que ja e. </p>
+                    negocio ou projeto pessoal mais incrivel. </p>
                 <a href="#about"> Sobre min </a>
             </div>
 
@@ -49,8 +51,10 @@
                 <a href="#"> <i class="fa-brands fa-linkedin fa-2x"> </i> </a>
             </div>
 
+            <div class="arrow-down">
+                <i class="fa-solid fa-arrow-down fa-beat fa-lg" style="color: var(--white-color);"></i>
+            </div>
         </section>
-
     </div>
 
     <main class="container">
@@ -110,7 +114,7 @@
 
         </section>
 
-        <section class="services">
+        <section class="services" id="servicos">
 
             <h1 class="services-title"> Serviços </h1>
 
@@ -137,12 +141,12 @@
             </div>
         </section>
 
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h1 class="projetos-title"> Projetos </h1>
 
             <div class="projetos-content">
 
-                <div class="projetos-cards card1">
+                <div class="projetos-cards">
                     <img src="/src/img/site-academia.png" alt="" srcset="">
                     <h3> Site para Academia </h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
@@ -155,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="projetos-cards card2">
+                <div class="projetos-cards">
                     <img src="/src/img/site-passaport.png" alt="" srcset="">
                     <h3> Site para Academia </h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
@@ -168,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="projetos-cards card3">
+                <div class="projetos-cards">
                     <img src="/src/img/site-barbearia.png" alt="" srcset="">
                     <h3> Site para Academia </h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>
@@ -213,7 +217,7 @@
 
     <div class="bg-contact">
 
-        <section class="contact container">
+        <section class="contact container" id="contato">
 
             <h1 class="title-contact"> Contato </h1>
 
@@ -268,6 +272,7 @@
 
         <section class="footer container">
             <div></div>
+            <img src="/src/img/Logo Uni.png" alt="">
             <h4> © Copyright 2024. Designed by <a href="#" target="_blank"> Wesley Saraiva </a> </h4>
         </section>
 

@@ -1,3 +1,9 @@
+//----------------NAVBAR-----------------
+window.addEventListener("scroll", function () {
+    var header = this.document.querySelector('#header');
+    header.classList.toggle('rolagem', window.scrollY > 0)
+})
+
 //----------------ABOUT-TAB-----------------
 //Elemento ja abre aberto
 document.getElementById("defaultOpen").click();

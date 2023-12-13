@@ -5,15 +5,18 @@
     --white-color: #FFFF;
     --black-color: #000000;
     --background-color: #1E1E1E;
-    --blue-color: rgba(3, 169, 244, 1.000);
+    --blue-color: rgba(96, 13, 255, 1);
     --white-color-secundaria: rgb(255 255 255 / 75%);
+    --gradient-color: linear-gradient(160deg, #600dff 0%, #58b4d8 100%);
     --bg-cards: rgb(16 16 16);
 }
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -65,35 +68,40 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*  --------------------NAVBAR------------------------*/
+header {
+    padding: 60px 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    transition: 0.5s;
+}
+
+header.rolagem {
+    background-color: var(--black-color);
+    padding: 10px 100px;
+}
+
+header.rolagem a {
+    color: var(--blue-color);
+}
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
 }
 
 .logo {
-    color: var(--white-color);
-    text-transform: uppercase;
     cursor: pointer;
-    font-size: 20px;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 80px;
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 20px;
 }
 
 .navbar ul li {
@@ -128,11 +136,14 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
-.text img {
+.hero img {
     width: 200px;
     height: 200px;
+    border: 2px solid var(--blue-color);
     border-radius: 53% 47% 70% 30% / 36% 30% 70% 64%;
 }
 
@@ -141,11 +152,11 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     padding: 30px 15%;
-    gap: 20px;
+    gap: 30px;
 }
 
 .text h1 {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 800;
     color: var(--white-color);
     line-height: 1em;
@@ -156,7 +167,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .text p {
-    font-size: 17px;
+    font-size: 20px;
     color: var(--white-color);
     text-align: center;
 }
@@ -176,7 +187,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
-    background-image: linear-gradient(to bottom, #0baff9, #3bade8, #54aad7, #68a7c6, #78a3b7);
+    background-image: var(--gradient-color);
     letter-spacing: 2px;
     transition: 0.9s;
     border-radius: 10px;
@@ -191,7 +202,7 @@ body::-webkit-scrollbar-thumb {
 .social {
     position: absolute;
     z-index: 999;
-    bottom: 30px;
+    bottom: 100px;
     display: flex;
     gap: 25px;
     align-items: center;
@@ -205,6 +216,12 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-8px) scale(1.1);
     color: var(--blue-color);
     transition: 0.9s;
+}
+
+.arrow-down {
+    position: absolute;
+    z-index: 999;
+    bottom: 30px;
 }
 
 /*  --------------------ABOUT------------------------*/
@@ -328,7 +345,7 @@ li {
 
 .expander {
     position: absolute;
-    background: rgba(3, 169, 244, 0.45);
+    background: rgba(75, 3, 244, 0.45);
     backdrop-filter: blur(2.8992px);
     bottom: 0;
     width: 100%;
@@ -366,8 +383,8 @@ li {
 
 .services-card:after {
     content: "";
-    height: 70px;
-    width: 1px;
+    height: 160px;
+    width: 2px;
     position: absolute;
     left: -1px;
     top: 65%;
@@ -543,7 +560,7 @@ li {
     transform: translate(-50%, -50%) scale(0);
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(-15deg, var(--blue-color) 40%, rgb(151, 183, 221) 60%);
+    background-image: linear-gradient(-15deg, var(--blue-color) 40%, rgb(67, 123, 192) 60%);
     transition: transform 0.1s ease;
 }
 
@@ -629,7 +646,7 @@ li {
     flex-grow: 1;
     padding: 0 8px;
     font-size: 18px;
-    background-image: linear-gradient(to bottom, #0baff9, #3bade8, #54aad7, #68a7c6, #78a3b7);
+    background-image: var(--gradient-color);
     color: var(--black-color);
     border: 1px solid var(--blue-color);
     border-right: none;
@@ -714,6 +731,8 @@ li {
     background-color: #1a1a1a;
     padding-inline: .3rem;
     color: var(--blue-color);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .contact-row-2 button {
@@ -723,7 +742,7 @@ li {
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
-    background-image: linear-gradient(to bottom, #0baff9, #3bade8, #54aad7, #68a7c6, #78a3b7);
+    background-image: var(--gradient-color);
     letter-spacing: 2px;
     transition: 0.9s;
     border-radius: 10px;
@@ -741,7 +760,7 @@ li {
 
 .footer div {
     width: 100%;
-    border-top: 1px solid var(--background-color);
+    border-top: 2px solid var(--background-color);
 }
 
 .footer h4 {
@@ -752,7 +771,13 @@ li {
 
 .footer a {
     font-size: 18px;
-    background-image: linear-gradient(to bottom, #0baff9, #3bade8, #54aad7, #68a7c6, #78a3b7);
+    background-image: var(--gradient-color);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.footer img {
+    padding-top: 10px;
+    width: 50px;
+
 }
