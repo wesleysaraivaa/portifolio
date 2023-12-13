@@ -1,7 +1,7 @@
 //----------------NAVBAR-----------------
 window.addEventListener("scroll", function () {
     var header = this.document.querySelector('#header');
-    header.classList.toggle('rolagem', window.scrollY > 0)
+    header.classList.toggle('rolagem', window.scrollY > 600)
 })
 
 //----------------ABOUT-TAB-----------------

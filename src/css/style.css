@@ -79,7 +79,7 @@ header {
 }
 
 header.rolagem {
-    background-color: var(--black-color);
+    background: var(--bg-cards);
     padding: 10px 100px;
 }
 
