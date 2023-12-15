@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container {
-    padding-inline: 15vw;
+    padding-inline: 16vw;
 }
 
 /*  --------------------NAVBAR------------------------*/
@@ -96,7 +96,7 @@ header.rolagem a {
 
 .logo {
     cursor: pointer;
-    width: 80px;
+    width: 70px;
 }
 
 .nav-menu {
@@ -110,9 +110,9 @@ header.rolagem a {
 
 .nav-link {
     text-decoration: none;
-    font-size: 18px;
     color: var(--white-color);
     position: relative;
+    font-weight: bold;
 }
 
 .nav-link::after {
@@ -141,10 +141,10 @@ header.rolagem a {
 }
 
 .hero img {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     border: 2px solid var(--blue-color);
-    border-radius: 53% 47% 70% 30% / 36% 30% 70% 64%;
+    border-radius: 44% 56% 70% 30% / 30% 30% 70% 70%;
 }
 
 .text {
@@ -156,7 +156,6 @@ header.rolagem a {
 }
 
 .text h1 {
-    font-size: 48px;
     font-weight: 800;
     color: var(--white-color);
     line-height: 1em;
@@ -167,26 +166,15 @@ header.rolagem a {
 }
 
 .text p {
-    font-size: 20px;
     color: var(--white-color);
     text-align: center;
 }
 
-.text h3 {
-    font-size: 60px;
-    margin-top: -15px;
-    color: var(--white-color);
-    line-height: 1em;
-    text-transform: uppercase;
-}
-
 .text a {
-    font-size: 24px;
     color: var(--white-color);
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1em;
-    padding: 10px 20px;
+    padding: 8px 15px;
     background-image: var(--gradient-color);
     letter-spacing: 2px;
     transition: 0.9s;
@@ -226,6 +214,13 @@ header.rolagem a {
 
 /*  --------------------ABOUT------------------------*/
 
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    color: var(--white-color);
+}
 
 .about-title {
     margin-bottom: 50px;
@@ -238,20 +233,11 @@ header.rolagem a {
     color: var(--blue-color);
 }
 
-.about-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 150px;
-    color: var(--white-color);
-}
-
 .about-col-1 {
     flex-basis: 55%;
 }
 
 .about-col-1 p {
-
     font-size: 14px;
 }
 
@@ -315,7 +301,7 @@ li {
     padding: 15px 25px;
 }
 
-.about-content p,
+.about p,
 li {
     text-align: justify;
     font-size: 14px;
