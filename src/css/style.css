@@ -410,12 +410,10 @@ li {
 .card-content h2 {
     color: var(--white-color);
     text-transform: uppercase;
-    font-size: 18px;
 }
 
 .card-content p {
     color: rgb(255 255 255 / 75%);
-    line-height: 14px;
 }
 
 .card-content a {
@@ -491,17 +489,16 @@ li {
     justify-content: center;
     width: 45px;
     height: 45px;
-    font-size: 17px;
     border-radius: 50%;
     color: var(--white-color);
-    background: var(--gradient-color);
+    background: var(--blue-color);
 }
 
-.card-text h4 {
-    font-size: 15px;
-    font-weight: 700;
+.projetos-cards h4 {
+    background-color: var(--bg-cards);
+    padding: 10px;
+    border-radius: 10px;
     margin-bottom: 10px;
-    line-height: 1.4;
     color: var(--white-color-secundaria);
 }
 
@@ -745,6 +742,7 @@ li {
     .contact {
         text-align: center;
     }
+
 
     .contact-content {
         display: flex;
