@@ -1,0 +1,126 @@
+/*==================== ABOUT ====================*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px;
+
+
+}
+
+.about h1 {
+    margin-bottom: 30px;
+    font-size: clamp(1.6rem, .7rem + 3vw, 2.5rem);
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.about h1 span {
+    color: var(--blue-color);
+}
+
+.about p,
+a {
+    font-size: clamp(.8rem, .4rem + 1.5vw, 1.1rem);
+}
+
+.about-img-col-2 {
+    display: none;
+}
+
+.about-img-col-2 img {
+    width: clamp(200px, 100%, 600px);
+    border-radius: 10px;
+    border: 1px solid var(--blue-color);
+    /* filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5)); */
+    filter: brightness(0.5);
+}
+
+.about-tab {
+    display: flex;
+    margin: 20px 0 40px;
+    gap: 40px;
+}
+
+.tablinks {
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tablinks.active {
+    color: var(--blue-color);
+}
+
+.tablinks::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--blue-color);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.tablinks.active::after {
+    width: 100%;
+}
+
+.tabcontent {
+    color: var(--white-color-secundaria);
+    background-color: var(--bg-cards);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -5px -5px 15px rgb(25, 25, 25);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px);
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+    border-radius: 10px;
+}
+
+.tabcontent p,
+li {
+    padding: 15px 25px;
+}
+
+.about p,
+li {
+    text-align: justify;
+}
+
+.tabcontent ul li {
+    list-style: none;
+}
+
+.skill-name {
+    margin: 10px 0;
+}
+
+.skill-name span {
+    color: var(--blue-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.expand {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.expander {
+    position: absolute;
+    background: rgba(75, 3, 244, 0.45);
+    backdrop-filter: blur(2.8992px);
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+}

@@ -1,0 +1,94 @@
+/*==================== SERVICES ====================*/
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 100px;
+}
+
+.services h1 {
+    margin-bottom: 30px;
+    font-size: clamp(1.6rem, .7rem + 3vw, 2.5rem);
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.services h2 {
+    font-size: clamp(1rem, .9rem + 1.5vw, 1.2rem);
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.services p {
+    font-size: clamp(.8rem, .4rem + 1.1vw, 1rem);
+    color: rgb(255 255 255 / 75%);
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.services-card {
+    position: relative;
+    background-color: var(--bg-cards);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -5px -5px 15px rgb(25, 25, 25);
+    border-radius: 10px;
+}
+
+.services-card:after {
+    content: "";
+    height: 160px;
+    width: 2px;
+    position: absolute;
+    left: -1px;
+    top: 65%;
+    transition: top, opacity;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+    background: linear-gradient(transparent, var(--blue-color), transparent);
+    box-shadow: 0 0 30px var(--blue-color);
+    opacity: 0;
+}
+
+.services-card:hover:after {
+    top: 25%;
+    opacity: 1;
+}
+
+.card-content {
+    display: grid;
+    gap: 20px;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px);
+    background-size: 1.1rem 1.1rem;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card-content i {
+    color: var(--white-color-secundaria);
+}
+
+.card-content a {
+    color: var(--blue-color);
+    font-size: clamp(1rem, .9rem + 1.5vw, 1.2rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
+    background: linear-gradient(transparent, transparent);
+    letter-spacing: 2px;
+    transition: 0.9s;
+}
+
+.card-content a:hover {
+    letter-spacing: 6px;
+    transition: 0.9s;
+}

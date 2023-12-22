@@ -1,0 +1,73 @@
+/*==================== PROJETOS ====================*/
+.projects {
+    margin-top: 100px;
+}
+
+.projects h1 {
+    margin-bottom: 30px;
+    font-size: clamp(1.6rem, .7rem + 3vw, 2.5rem);
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.projects-cards {
+    background-color: var(--background-color);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -5px -5px 15px rgb(25, 25, 25);
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+    padding: 15px;
+    transition: all .50s ease;
+}
+
+.projects-cards img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.4rem;
+}
+
+.card-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.card-text h5 {
+    font-size: clamp(1rem, .6rem + 1.3vw, 1.2rem);
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.card-icon i {
+    color: var(--blue-color);
+    font-size: clamp(1.4rem, .6rem + 1.3vw, 1.2rem);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.projects-cards p {
+    font-size: clamp(.7rem, .4rem + 1vw, .9rem);
+    background-color: var(--bg-cards);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: var(--white-color-secundaria);
+}
+
+.projects-cards:hover {
+    border: 1px solid var(--blue-color);
+    transform: translateY(-5px) scale(1.03);
+}

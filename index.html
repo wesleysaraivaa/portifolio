@@ -20,24 +20,54 @@
 </head>
 
 <body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <img src="/src/img/Logo Uni.png" class="nav_logo" alt="" srcset="">
 
-    <header id="header">
-        <div class="menu">
-            <nav class="navbar">
-                <img class="logo" src="/src/img/Logo Uni.png" alt="">
-                <ul class="nav-menu">
-                    <li class="nav-item"> <a href="#about" class="nav-link">Sobre</a> </li>
-                    <li class="nav-item"> <a href="#servicos" class="nav-link">Serviços</a> </li>
-                    <li class="nav-item"> <a href="#projetos" class="nav-link">Projetos</a> </li>
-                    <li class="nav-item"> <a href="#contato" class="nav-link">Contato</a> </li>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="fa-solid fa-house nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#sobre" class="nav_link">
+                            <i class="fa-solid fa-user nav_icon"></i> Sobre
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#servicos" class="nav_link">
+                            <i class="fa-solid fa-briefcase nav_icon"></i> Servicos
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#projetos" class="nav_link">
+                            <i class="fa-solid fa-clipboard-check nav_icon"></i> Projetos
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contato" class="nav_link">
+                            <i class="fa-regular fa-message nav_icon"></i> Contato
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+                <i class="fa-solid fa-xmark nav_close" id="nav-close"></i>
+            </div>
+
+            <div class="nav_btns">
+                <!-- <i class="fa-regular fa-moon fa-lg"></i> -->
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="fa-solid fa-grip-vertical"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="img-home">
         <section class="hero container">
             <img src="/src/img/Documento de saraivaa.jpg" alt="">
+
             <div class="text">
                 <h1> Olá, eu sou o <span> Wesley ✌</span> </h1>
                 <p> Desenvolvedor web e app front-end. Disponivel para freelances e totalmente disposto para tornar seu
@@ -54,8 +84,10 @@
             <div class="arrow-down">
                 <i class="fa-solid fa-arrow-down fa-beat fa-lg" style="color: var(--white-color);"></i>
             </div>
+
         </section>
     </div>
+
 
     <main class="container">
 
@@ -114,7 +146,7 @@
 
         <section class="services" id="servicos">
 
-            <h1 class="services-title"> Serviços </h1>
+            <h1> Serviços </h1>
 
             <div class="services-content">
 
@@ -139,13 +171,13 @@
             </div>
         </section>
 
-        <section class="projetos" id="projetos">
+        <section class="projects" id="projetos">
 
-            <h1 class="projetos-title"> Projetos </h1>
+            <h1> Projetos </h1>
 
-            <div class="projetos-content">
+            <div class="projects-content">
 
-                <div class="projetos-cards">
+                <div class="projects-cards">
                     <a href="https://site-academia-five.vercel.app/" target="_blank"> <img
                             src="/src/img/site-passaport.png" alt="" srcset=""> </a>
                     <div class="card-main">
@@ -157,10 +189,10 @@
                                     class="fa-brands fa-github fa-2x"> </i> </a>
                         </div>
                     </div>
-                    <h4> Site Desenvido para uma emprese de turismo de Ubajara .</h4>
+                    <p> Site Desenvido para uma emprese de turismo de Ubajara .</p>
                 </div>
 
-                <div class="projetos-cards">
+                <div class="projects-cards">
                     <a href="https://site-academia-five.vercel.app/" target="_blank"> <img
                             src="/src/img/site-academia.png" alt="" srcset=""> </a>
                     <div class="card-main">
@@ -172,10 +204,10 @@
                                     class="fa-brands fa-github fa-2x"> </i> </a>
                         </div>
                     </div>
-                    <h4> Modelod e site para Academias, projeto feito para praticar. </h4>
+                    <p> Modelod e site para Academias, projeto feito para praticar. </p>
                 </div>
 
-                <div class="projetos-cards">
+                <div class="projects-cards">
                     <a href="https://site-academia-five.vercel.app/" target="_blank"> <img
                             src="/src/img/site-barbearia.png" alt="" srcset=""> </a>
                     <div class="card-main">
@@ -187,10 +219,10 @@
                                     class="fa-brands fa-github fa-2x"> </i> </a>
                         </div>
                     </div>
-                    <h4> Modelod e site para Academias, projeto feito para praticar. </h4>
+                    <p> Modelod e site para Academias, projeto feito para praticar. </p>
                 </div>
 
-                <div class="projetos-cards">
+                <div class="projects-cards">
                     <a href="https://site-academia-five.vercel.app/" target="_blank"> <img
                             src="/src/img/site-barbearia.png" alt="" srcset=""> </a>
                     <div class="card-main">
@@ -202,10 +234,10 @@
                                     class="fa-brands fa-github fa-2x"> </i> </a>
                         </div>
                     </div>
-                    <h4> Modelod e site para Academias, projeto feito para praticar. </h4>
+                    <p> Modelod e site para Academias, projeto feito para praticar. </p>
                 </div>
 
-                <div class="projetos-cards">
+                <div class="projects-cards">
                     <a href="https://site-academia-five.vercel.app/" target="_blank"> <img src="/src/img/site-twd.png"
                             alt="" srcset=""> </a>
                     <div class="card-main">
@@ -217,10 +249,10 @@
                                     class="fa-brands fa-github fa-2x"> </i> </a>
                         </div>
                     </div>
-                    <h4> Modelod e site para Academias, projeto feito para praticar. </h4>
+                    <p> Modelod e site para Academias, projeto feito para praticar. </p>
                 </div>
 
-                <div class="projetos-cards">
+                <div class="projects-cards">
                     <a href="https://site-academia-five.vercel.app/" target="_blank"> <img src="/src/img/site-login.png"
                             alt="" srcset=""> </a>
                     <div class="card-main">
@@ -232,35 +264,34 @@
                                     class="fa-brands fa-github fa-2x"> </i> </a>
                         </div>
                     </div>
-                    <h4> Modelod e site para Academias, projeto feito para praticar. </h4>
+                    <p> Modelod e site para Academias, projeto feito para praticar. </p>
                 </div>
-
-
 
             </div>
         </section>
+
     </main>
 
     <div class="bg-contact">
 
         <section class="contact container" id="contato">
 
-            <h1 class="title-contact"> Contato </h1>
+            <h1> Contato </h1>
 
-            <div class="contact-content">
+            <div class="contact-content ">
 
                 <div class="contact-row-1">
                     <div class="contact-row-1-content">
                         <h3> Se preferir pode mandar um email: </h3>
                         <div class="contact-copy-email">
-                            <input type="text" class="copy-email-input" value="wesley@gmail.com" readonly="true">
+                            <input type="text" class="copy-email-input" value="wesley@gmail.com" readonly="true" />
                             <button type="button" class="copy-email-button">
                                 <i class="fa-regular fa-copy fa-2x"></i>
                             </button>
                         </div>
                     </div>
                     <div class="contact-row-1-social">
-                        <h4> Social: </h4>
+                        <h3> Social: </h3>
                         <a href="#"> <i class="fa-brands fa-linkedin fa-2x"> </i> </a>
                         <a href="#"> <i class="fa-brands fa-whatsapp fa-2x"> </i> </a>
                         <a href="#"> <i class="fa-brands fa-instagram fa-2x"> </i> </a>
@@ -288,7 +319,10 @@
                             cols="20" rows="5"></textarea>
                         <label class="label" for="assunto">Mensagem</label>
                     </div>
-                    <button type="submit"> Enviar </button>
+                    <div class="button-contact">
+                        <button type="submit"> Enviar </button>
+                    </div>
+
                 </form>
 
             </div>
@@ -299,6 +333,11 @@
             <img src="/src/img/Logo Uni.png" alt="">
             <h4> © Copyright 2024. Designed by <a href="#" target="_blank"> Wesley Saraiva </a> </h4>
         </section>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="fa-solid fa-arrow-up scrollup_icon"></i>
+        </a>
 
     </div>
 
