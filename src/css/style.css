@@ -95,18 +95,7 @@ body::-webkit-scrollbar-thumb {
 
 
 /*==================== MEDIA QUERIES ====================*/
-/* MOBILE*/
-@media screen and (max-width: 516px) {
-    .nav_menu {
-        padding: 2rem .25rem 4rem;
-    }
 
-    .nav_list {
-        grid-template-columns: repeat(auto-fill, minmax(100px, auto));
-        /* grid-template-columns: max-content 1fr 1fr ; */
-        column-gap: 0;
-    }
-}
 
 /* TABLET */
 @media screen and (min-width:768px) {
