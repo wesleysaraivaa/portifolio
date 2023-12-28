@@ -1,21 +1,20 @@
 /*==================== FOOTER ====================*/
 .footer {
     text-align: center;
-    height: 30vh;
 }
 
-.footer div {
+.footer-content div {
     width: 100%;
     border-top: 2px solid var(--background-color);
 }
 
-.footer h4 {
+.footer-content h4 {
     font-size: clamp(.6rem, .4rem + .4vw, 4rem);
     font-weight: bold;
     color: var(--white-color);
 }
 
-.footer a {
+.footer-content a {
     font-size: clamp(.7rem, .5rem + .5vw, 5rem);
     font-weight: bold;
     background-image: var(--gradient-color);
@@ -23,7 +22,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.footer img {
+.footer-content img {
     padding-top: 10px;
     width: clamp(40px, 5%, 80px);
 }
