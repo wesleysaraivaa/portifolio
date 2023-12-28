@@ -2,6 +2,7 @@
 .bg-contact {
     position: relative;
     width: 100%;
+
 }
 
 .bg-contact::before {
@@ -19,9 +20,14 @@
     background-position: 0 50%;
 }
 
+.contact {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 40px 40px;
+}
 
 .contact h1 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: clamp(1.6rem, .7rem + 3vw, 2.5rem);
     font-weight: 700;
     color: var(--white-color);

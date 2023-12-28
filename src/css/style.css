@@ -96,13 +96,11 @@ body::-webkit-scrollbar-thumb {
 
 /*==================== MEDIA QUERIES ====================*/
 
-
 /* TABLET */
 @media screen and (min-width:768px) {
     .header {
         top: 0;
         bottom: initial;
-
     }
 
     .nav {
@@ -184,6 +182,10 @@ body::-webkit-scrollbar-thumb {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, auto));
         gap: 3rem;
+    }
+
+    .contact-copy-email {
+        justify-content: flex-start;
     }
 
 }
