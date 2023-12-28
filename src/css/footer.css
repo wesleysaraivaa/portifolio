@@ -3,18 +3,17 @@
     text-align: center;
 }
 
-.footer-content div {
-    width: 100%;
-    border-top: 2px solid var(--background-color);
+.footer hr {
+    border: 1.5px solid var(--background-color);
 }
 
-.footer-content h4 {
+.footer h4 {
     font-size: clamp(.6rem, .4rem + .4vw, 4rem);
     font-weight: bold;
     color: var(--white-color);
 }
 
-.footer-content a {
+.footer a {
     font-size: clamp(.7rem, .5rem + .5vw, 5rem);
     font-weight: bold;
     background-image: var(--gradient-color);
@@ -22,7 +21,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.footer-content img {
+.footer img {
     padding-top: 10px;
     width: clamp(40px, 5%, 80px);
 }
