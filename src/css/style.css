@@ -57,21 +57,20 @@ a {
     position: fixed;
     right: 1rem;
     bottom: -20%;
-    background-color: var(--first-color);
     opacity: .8;
     padding: 0 .3rem;
     border-radius: .4rem;
-    z-index: var(--z-tooltip);
+    z-index: 100;
     transition: .4s;
 }
 
 .scrollup:hover {
-    background-color: var(--first-color-alt);
+    color: var(--blue-color);
 }
 
 .scrollup_icon {
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--white-color);
 }
 
 /* Show scroll */
