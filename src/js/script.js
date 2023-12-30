@@ -31,34 +31,6 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
-
-function scrollActive() {
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        } else {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/
-function scrollHeader() {
-    const nav = document.getElementById('header')
-    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-    if (this.scrollY >= 90) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
-
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
@@ -67,10 +39,14 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/
 
+/*==================== NAVBAR ====================*/
+window.addEventListener("scroll", function () {
+    var nav = this.document.querySelector('#nav');
+    nav.classList.toggle('rolagem', window.scrollY > 600)
+})
 
-//----------------ABOUT-TAB-----------------
+/*==================== ABOUT-TAB ====================*/
 //Elemento ja abre aberto
 document.getElementById("defaultOpen").click();
 
@@ -91,7 +67,7 @@ function openTab(evt, Linkname) {
     evt.currentTarget.className += " active";
 }
 
-//----------------ABOUT-EXPANDER-----------------
+/*==================== ABOUT-EXPANDER ====================*/
 function createExpander(container) {
     var elem;
 
@@ -124,7 +100,7 @@ document.querySelectorAll('.expand').forEach(function (elem) {
     createExpander(elem);
 });
 
-//----------------CONTACT-COPY-EMAIL-----------------
+/*==================== CONTACT-COPY-EMAIL ====================*/
 document.querySelectorAll(".contact-copy-email").forEach(copyEmailContainer => {
     const copyInput = copyEmailContainer.querySelector(".copy-email-input");
     const copyButton = copyEmailContainer.querySelector(".copy-email-button");

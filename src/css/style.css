@@ -104,7 +104,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     .nav {
-        column-gap: 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     }
 
     .nav_icon,
@@ -115,11 +119,34 @@ body::-webkit-scrollbar-thumb {
 
     .nav_list {
         display: flex;
-        column-gap: 2rem;
+        gap: 0rem;
     }
 
     .nav_menu {
         margin-left: auto;
+    }
+
+    .nav_link {
+        position: relative;
+    }
+
+    .nav_link::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background: var(--blue-color);
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+
+    .nav_link:hover::after {
+        width: 100%;
+    }
+
+    .hero {
+        height: 100vh;
     }
 
     .about-img-col-2 {
@@ -171,11 +198,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     .nav {
-        padding: 10px 30px;
+        padding: 40px 50px;
     }
 
-    .hero {
-        height: 100vh;
+    .nav_logo {
+        width: 50px;
     }
 
     .services-content {

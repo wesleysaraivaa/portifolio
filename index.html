@@ -21,13 +21,13 @@
 
 <body>
     <header class="header" id="header">
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <img src="/src/img/Logo Uni.png" class="nav_logo" alt="" srcset="">
 
             <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list grid">
+                <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
+                        <a href="./" class="nav_link">
                             <i class="fa-solid fa-house nav_icon"></i> Home
                         </a>
                     </li>
@@ -70,9 +70,9 @@
 
             <div class="text">
                 <h1> Olá, eu sou o <span> Wesley ✌</span> </h1>
-                <p> Desenvolvedor web e app front-end. Disponivel para freelances e totalmente disposto para tornar seu
-                    negocio ou projeto pessoal ou profissional mais incrivel. </p>
-                <a href="#about"> Sobre min </a>
+                <p> Desenvolvedor Web e App Front-end. Disponível para freelances e totalmente disposto para tornar seu
+                    negócio ou projeto pessoal mais incrível. </p>
+                <a href="#sobre"> Sobre min </a>
             </div>
 
             <div class="social">
@@ -91,14 +91,13 @@
 
     <main class="container">
 
-        <section class="about" id="about">
+        <section class="about" id="sobre">
 
             <div class="about-col-1">
 
                 <h1 class="about-title"> Sobre <span> mim</span> </h1>
-                <p> Olá, tudo bem? Espero que sim! Me chamo Wesley e sou um entusiasta perene da tecnologia. Estou
-                    constantemente em busca de novas habilidades que só a evolução tecnológica é capaz de oferecer,
-                    absorvendo todas as novidades que são lançadas no mercado.
+                <p> Olá! Sou Wesley, um entusiasta perene da tecnologia, sempre buscando adquirir novas habilidades
+                    proporcionadas pela evolução tecnológica e absorvendo as últimas novidades do mercado.
                 </p>
                 <div class="about-tab">
                     <a class="tablinks" onclick="openTab(event, 'sobremin')" id="defaultOpen"> Sobre </a>
@@ -106,9 +105,9 @@
                     <a class="tablinks" onclick="openTab(event, 'educacao')"> Educacao </a>
                 </div>
                 <div class="tabcontent expand" id="sobremin">
-                    <p> Minha trajetória teve início na infância, marcada por uma curiosidade inata sobre o
-                        funcionamento das coisas desmontando eletrônicos para saber sua estrutura. Posteriormente,
-                        decidi ingressar em um colégio técnico, onde optei pelo curso de informática.
+                    <p> Minha trajetória iniciou na infância, marcada por uma curiosidade inata sobre o funcionamento
+                        das coisas desmontando eletrônicos para saber sua estrutura. Posteriormente, decidi ingressar em
+                        um colégio técnico, onde optei pelo curso de informática.
                     </p>
                     <p> Os três anos nesse ambiente foram extraordinários, representando um período crucial em que
                         expandi meus horizontes e aprofundei meu entendimento sobre o funcionamento das tecnologias.
@@ -117,8 +116,8 @@
                         aplicativos.
                     </p>
                     <p> Estou aberto a novas oportunidades que possam enriquecer meu percurso, proporcionando
-                        aprendizado contínuo e crescimento profissional. Caso haja alguma oportunidade
-                        alinhada às minhas habilidades e experiência não hesite em entrar em contato.
+                        aprendizado contínuo e crescimento profissional. Caso haja alguma oportunidade alinhada às
+                        minhas habilidades e experiência, não hesite em entrar em contato.
                     </p>
                 </div>
                 <div class="tabcontent" id="skills">
@@ -131,8 +130,13 @@
                 </div>
                 <div class="tabcontent" id="educacao">
                     <ul class="list_skils">
-                        <li class="skill-name"> <span> 2000 <br> </span> Governador Waldemar </li>
-                        <li class="skill-name"> <span> 2000 <br> </span> Analise e Desenvovimento de Sistemas </li>
+                        <li class="skill-name"> <span> Anhanguera Educacional - 2018 - 2021 <br>
+                            </span> Ensino Superior, Tecnólogo em Análise e Desenvolvimento de Sistemas
+                        </li>
+                        <li class="skill-name"> <span> EEEP Gov. Waldemar de Alcântara - 2009 - 2011 <br>
+                            </span> Técnico em Informática, Tecnologia da Informação
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -153,18 +157,31 @@
                 <div class="services-card">
                     <div class="card-content">
                         <i class="fa-solid fa-code fa-2x"> </i>
-                        <h2> Desenvolvimento de Sites e App </h2>
-                        <p> Love to spend hours in codeing and get lost in own fantasy world of code, the feeling </p>
-                        <a href=""> Contato </a>
+                        <h2> Desenvolvimento de Sites e Aplicativos Web </h2>
+                        <p> Investir em um site profissional é o primeiro passo para o fortalecimento da credibilidade
+                            de uma marca.
+                        </p>
+                        <ul>
+                            <li> <i class="fa-solid fa-caret-right"></i> Otimização para SEO </li>
+                            <li> <i class="fa-solid fa-caret-right"></i> Design </li>
+                            <li> <i class="fa-solid fa-caret-right"></i> Desenvolvimento de e-commerce</li>
+                        </ul>
+                        <a href="#contato"> Contato </a>
                     </div>
                 </div>
 
                 <div class="services-card">
                     <div class="card-content">
                         <i class="fa-solid fa-laptop-medical fa-2x"> </i>
-                        <h2> Manuntencão de Computadores </h2>
-                        <p> Love to spend hours in codeing and get lost in own fantasy world of code, the feeling </p>
-                        <a href=""> Contato </a>
+                        <h2> Montagem e Manutenção de Computadores </h2>
+                        <p> Manutenção, Otimização e montagem personalizada para suas necessidades específicas.
+                        </p>
+                        <ul>
+                            <li> <i class="fa-regular fa-hand-point-right"></i> Manutenção Corretiva ou Preventiva </li>
+                            <li> <i class="fa-regular fa-hand-point-right"></i> Montagem de Computadores </li>
+                            <li> <i class="fa-regular fa-hand-point-right"></i> Otimização de desempenho </li>
+                        </ul>
+                        <a href="#contato"> Contato </a>
                     </div>
                 </div>
 
