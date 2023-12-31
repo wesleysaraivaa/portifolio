@@ -24,7 +24,6 @@
         -5px -5px 15px rgb(25, 25, 25);
     border-radius: 10px;
     border: 1px solid transparent;
-
     padding: 15px;
     transition: all .50s ease;
 }
@@ -43,13 +42,13 @@
     margin-bottom: 0.5rem;
 }
 
-.card-text h5 {
+.card-main h5 {
     font-size: clamp(1rem, .6rem + 1.3vw, 1.2rem);
     font-weight: 600;
     color: var(--white-color);
 }
 
-.card-icon i {
+.card-main i {
     color: var(--blue-color);
     font-size: clamp(1.4rem, .6rem + 1.3vw, 1.2rem);
     display: inline-flex;
@@ -58,7 +57,7 @@
     border-radius: 50%;
 }
 
-.projects-cards p {
+.card-text p {
     font-size: clamp(.7rem, .4rem + 1vw, .9rem);
     background-color: var(--bg-cards);
     padding: 10px;
