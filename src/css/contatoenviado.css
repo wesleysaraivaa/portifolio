@@ -57,16 +57,28 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     height: 400px;
     gap: 20px;
 }
 
 a {
-    font-size: clamp(1.5rem, .9rem + .9vw, 1rem);
-    font-weight: bold;
+    font-size: clamp(.6rem, .3rem + 1.1vw, 1rem);
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 15px;
+    width: 300px;
     background-image: var(--gradient-color);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    transition: 0.9s;
+    border-radius: 10px;
+}
+
+a:hover {
+    letter-spacing: 6px;
+    background-color: var(--blue-color);
+    transition: 0.9s;
 }
 
 h1 {

@@ -19,7 +19,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <title> Portfólio Wesley</title>
+    <title> Portfólio</title>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
             </div>
 
             <div class="nav_btns">
-                <!-- <i class="fa-regular fa-moon fa-lg"></i> -->
+
                 <div class="nav_toggle" id="nav-toggle">
                     <i class="fa-solid fa-grip-vertical"></i>
                 </div>
@@ -68,7 +68,7 @@
     </header>
 
     <div class="img-home">
-        <section class="hero container" data-aos="fade-up" data-aos-delay="400">
+        <main class="hero container" data-aos="fade-up" data-aos-delay="400">
             <img src="/src/img/Documento de saraivaa.jpg" alt="" data-aos="flip-up" data-aos-delay="400"
                 data-aos-duration="1800">
 
@@ -89,189 +89,180 @@
                 <i class="fa-solid fa-arrow-down fa-beat fa-lg"></i>
             </div>
 
-        </section>
+        </main>
     </div>
 
 
-    <main class="container">
+    <section class="about container" id="sobre">
+        <div class="about-col-1" data-aos="zoom-in" data-aos-delay="300">
 
-        <section class="about" id="sobre">
-
-            <div class="about-col-1" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000">
-
-                <h1 class="about-title"> Sobre <span> mim</span> </h1>
-                <p> Olá! Sou Wesley, um entusiasta perene da tecnologia, sempre buscando adquirir novas habilidades
-                    proporcionadas pela evolução tecnológica e absorvendo as últimas novidades do mercado.
+            <h1 class="about-title"> Sobre <span> mim</span> </h1>
+            <p> Olá! Sou Wesley, um entusiasta perene da tecnologia, sempre buscando adquirir novas habilidades
+                proporcionadas pela evolução tecnológica e absorvendo as últimas novidades do mercado.
+            </p>
+            <div class="about-tab">
+                <a class="tablinks" onclick="openTab(event, 'sobremin')" id="defaultOpen"> Sobre </a>
+                <a class="tablinks" onclick="openTab(event, 'skills')"> Skills </a>
+                <a class="tablinks" onclick="openTab(event, 'educacao')"> Educacao </a>
+            </div>
+            <div class="tabcontent expand" id="sobremin">
+                <p> Minha trajetória iniciou na infância, marcada por uma curiosidade inata sobre o funcionamento
+                    das coisas desmontando eletrônicos para saber sua estrutura. Posteriormente, decidi ingressar em
+                    um colégio técnico, onde optei pelo curso de informática.
                 </p>
-                <div class="about-tab">
-                    <a class="tablinks" onclick="openTab(event, 'sobremin')" id="defaultOpen"> Sobre </a>
-                    <a class="tablinks" onclick="openTab(event, 'skills')"> Skills </a>
-                    <a class="tablinks" onclick="openTab(event, 'educacao')"> Educacao </a>
-                </div>
-                <div class="tabcontent expand" id="sobremin">
-                    <p> Minha trajetória iniciou na infância, marcada por uma curiosidade inata sobre o funcionamento
-                        das coisas desmontando eletrônicos para saber sua estrutura. Posteriormente, decidi ingressar em
-                        um colégio técnico, onde optei pelo curso de informática.
+                <p> Os três anos nesse ambiente foram extraordinários, representando um período crucial em que
+                    expandi meus horizontes e aprofundei meu entendimento sobre o funcionamento das tecnologias.
+                    Em seguida, cursei Análise e Desenvolvimento de Sistemas na faculdade. Atualmente, concilio
+                    minha atuação em vendas e suporte técnico em informática com o desenvolvimento de sites e
+                    aplicativos.
+                </p>
+                <p> Estou aberto a novas oportunidades que possam enriquecer meu percurso, proporcionando
+                    aprendizado contínuo e crescimento profissional. Caso haja alguma oportunidade alinhada às
+                    minhas habilidades e experiência, não hesite em entrar em contato.
+                </p>
+            </div>
+            <div class="tabcontent" id="skills">
+                <ul class="list_skils">
+                    <li class="skill-name"> <span> Ferramentas <br> </span> Git / VS Code / GitHub</li>
+                    <li class="skill-name"> <span> Desenvovimento Web <br> </span> HTML / CSS / JS / React /
+                        Wordpress </li>
+                    <li class="skill-name"> <span> Desenvovimento App <br> </span> React Native </li>
+                </ul>
+            </div>
+            <div class="tabcontent" id="educacao">
+                <ul class="list_skils">
+                    <li class="skill-name"> <span> Anhanguera Educacional - 2018 - 2021 <br>
+                        </span> Ensino Superior, Tecnólogo em Análise e Desenvolvimento de Sistemas
+                    </li>
+                    <li class="skill-name"> <span> EEEP Gov. Waldemar de Alcântara - 2009 - 2011 <br>
+                        </span> Técnico em Informática, Tecnologia da Informação
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-img-col-2" data-aos="zoom-out" data-aos-delay="600" data-aos-duration="1000">
+            <img src="/src/img/WesleySaraiva.jpg" alt="" srcset="">
+        </div>
+    </section>
+
+    <section class="services container" id="servicos">
+        <h1> Serviços </h1>
+
+        <div class="services-content">
+
+            <div class="services-card card1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card-content">
+                    <i class="fa-solid fa-code fa-2x"> </i>
+                    <h2> Desenvolvimento de Sites e Aplicativos Web </h2>
+                    <p> Investir em um site profissional é o primeiro passo para o fortalecimento da credibilidade
+                        de uma marca.
                     </p>
-                    <p> Os três anos nesse ambiente foram extraordinários, representando um período crucial em que
-                        expandi meus horizontes e aprofundei meu entendimento sobre o funcionamento das tecnologias.
-                        Em seguida, cursei Análise e Desenvolvimento de Sistemas na faculdade. Atualmente, concilio
-                        minha atuação em vendas e suporte técnico em informática com o desenvolvimento de sites e
-                        aplicativos.
-                    </p>
-                    <p> Estou aberto a novas oportunidades que possam enriquecer meu percurso, proporcionando
-                        aprendizado contínuo e crescimento profissional. Caso haja alguma oportunidade alinhada às
-                        minhas habilidades e experiência, não hesite em entrar em contato.
-                    </p>
-                </div>
-                <div class="tabcontent" id="skills">
-                    <ul class="list_skils">
-                        <li class="skill-name"> <span> Ferramentas <br> </span> Git / VS Code / GitHub</li>
-                        <li class="skill-name"> <span> Desenvovimento Web <br> </span> HTML / CSS / JS / React /
-                            Wordpress </li>
-                        <li class="skill-name"> <span> Desenvovimento App <br> </span> React Native </li>
+                    <ul>
+                        <li> <i class="fa-solid fa-terminal"></i> Otimização para SEO </li>
+                        <li> <i class="fa-solid fa-terminal"></i> Design </li>
+                        <li> <i class="fa-solid fa-terminal"></i> Desenvolvimento de e-commerce </li>
                     </ul>
+                    <a href="#contato"> Contato </a>
                 </div>
-                <div class="tabcontent" id="educacao">
-                    <ul class="list_skils">
-                        <li class="skill-name"> <span> Anhanguera Educacional - 2018 - 2021 <br>
-                            </span> Ensino Superior, Tecnólogo em Análise e Desenvolvimento de Sistemas
-                        </li>
-                        <li class="skill-name"> <span> EEEP Gov. Waldemar de Alcântara - 2009 - 2011 <br>
-                            </span> Técnico em Informática, Tecnologia da Informação
-                        </li>
+            </div>
 
+            <div class="services-card card2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card-content">
+                    <i class="fa-solid fa-laptop-medical fa-2x"> </i>
+                    <h2> Montagem e Manutenção de Computadores </h2>
+                    <p> Manutenção, Otimização e montagem personalizada para suas necessidades específicas.
+                    </p>
+                    <ul>
+                        <li> <i class="fa-solid fa-terminal"></i> Manutenção Corretiva e Preventiva </li>
+                        <li> <i class="fa-solid fa-terminal"></i> Montagem de Computadores </li>
+                        <li> <i class="fa-solid fa-terminal"></i> Otimização de desempenho </li>
                     </ul>
+                    <a href="#contato"> Contato </a>
                 </div>
             </div>
 
+        </div>
+    </section>
 
-            <div class="about-img-col-2" data-aos="zoom-out" data-aos-delay="600" data-aos-duration="1000">
-                <img src="/src/img/WesleySaraiva.jpg" alt="" srcset="">
+    <section class="projects container" id="projetos">
+
+        <h1> Projetos </h1>
+
+        <div class="projects-content">
+
+            <div class="projects-cards" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://site-academia-five.vercel.app/" target="_blank"> <img src="/src/img/site-passaport.png"
+                        alt="" srcset=""> </a>
+                <div class="card-main">
+                    <h5> Site Passaport Ibiapaba </h5>
+                    <a href="https://github.com/wesleysaraivaa/Site-Academia" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"> </i>
+                    </a>
+                </div>
+                <div class="card-text">
+                    <p> Site Desenvolvido para uma emprese de turismo de Ubajara.</p>
+                </div>
             </div>
 
-        </section>
-
-        <section class="services" id="servicos">
-
-            <h1> Serviços </h1>
-
-            <div class="services-content">
-
-                <div class="services-card" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
-                    <div class="card-content">
-                        <i class="fa-solid fa-code fa-2x"> </i>
-                        <h2> Desenvolvimento de Sites e Aplicativos Web </h2>
-                        <p> Investir em um site profissional é o primeiro passo para o fortalecimento da credibilidade
-                            de uma marca.
-                        </p>
-                        <ul>
-                            <li> <i class="fa-solid fa-caret-right"></i> Otimização para SEO </li>
-                            <li> <i class="fa-solid fa-caret-right"></i> Design </li>
-                            <li> <i class="fa-solid fa-caret-right"></i> Desenvolvimento de e-commerce </li>
-                        </ul>
-                        <a href="#contato"> Contato </a>
-                    </div>
+            <div class="projects-cards" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://site-academia-five.vercel.app/" target="_blank"> <img src="/src/img/site-academia.png"
+                        alt="" srcset=""> </a>
+                <div class="card-main">
+                    <h5> Site para Academia </h5>
+                    <a href="https://github.com/wesleysaraivaa/Site-Academia" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"> </i>
+                    </a>
                 </div>
-
-                <div class="services-card" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                    <div class="card-content">
-                        <i class="fa-solid fa-laptop-medical fa-2x"> </i>
-                        <h2> Montagem e Manutenção de Computadores </h2>
-                        <p> Manutenção, Otimização e montagem personalizada para suas necessidades específicas.
-                        </p>
-                        <ul>
-                            <li> <i class="fa-regular fa-hand-point-right"></i> Manutenção Corretiva e Preventiva </li>
-                            <li> <i class="fa-regular fa-hand-point-right"></i> Montagem de Computadores </li>
-                            <li> <i class="fa-regular fa-hand-point-right"></i> Otimização de desempenho </li>
-                        </ul>
-                        <a href="#contato"> Contato </a>
-                    </div>
+                <div class="card-text">
+                    <p> Landing page para praticar onde o modelo serve para uma academia de musculação. </p>
                 </div>
-
             </div>
-        </section>
 
-        <section class="projects" id="projetos">
-
-            <h1> Projetos </h1>
-
-            <div class="projects-content">
-
-                <div class="projects-cards" data-aos="fade-up" data-aos-delay="200">
-                    <a href="https://site-academia-five.vercel.app/" target="_blank"> <img
-                            src="/src/img/site-passaport.png" alt="" srcset=""> </a>
-                    <div class="card-main">
-                        <h5> Site Passaport Ibiapaba </h5>
-                        <a href="https://github.com/wesleysaraivaa/Site-Academia" target="_blank">
-                            <i class="fa-brands fa-github fa-2x"> </i>
-                        </a>
-                    </div>
-                    <div class="card-text">
-                        <p> Site Desenvolvido para uma emprese de turismo de Ubajara.</p>
-                    </div>
+            <div class="projects-cards" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://barber-styllers.vercel.app/" target="_blank"> <img src="/src/img/site-barbearia.png"
+                        alt="" srcset=""> </a>
+                <div class="card-main">
+                    <h5> Site para Barbearia </h5>
+                    <a href="https://github.com/wesleysaraivaa/Site-Academia" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"> </i>
+                    </a>
                 </div>
-
-                <div class="projects-cards" data-aos="fade-up" data-aos-delay="300">
-                    <a href="https://site-academia-five.vercel.app/" target="_blank"> <img
-                            src="/src/img/site-academia.png" alt="" srcset=""> </a>
-                    <div class="card-main">
-                        <h5> Site para Academia </h5>
-                        <a href="https://github.com/wesleysaraivaa/Site-Academia" target="_blank">
-                            <i class="fa-brands fa-github fa-2x"> </i>
-                        </a>
-                    </div>
-                    <div class="card-text">
-                        <p> Landing page para praticar onde o modelo serve para uma academia de musculação. </p>
-                    </div>
+                <div class="card-text">
+                    <p> Landing page para praticar onde o modelo serve para uma barbearias. </p>
                 </div>
-
-                <div class="projects-cards" data-aos="fade-up" data-aos-delay="400">
-                    <a href="https://barber-styllers.vercel.app/" target="_blank"> <img
-                            src="/src/img/site-barbearia.png" alt="" srcset=""> </a>
-                    <div class="card-main">
-                        <h5> Site para Barbearia </h5>
-                        <a href="https://github.com/wesleysaraivaa/Site-Academia" target="_blank">
-                            <i class="fa-brands fa-github fa-2x"> </i>
-                        </a>
-                    </div>
-                    <div class="card-text">
-                        <p> Landing page para praticar onde o modelo serve para uma barbearias. </p>
-                    </div>
-                </div>
-
-                <div class="projects-cards" data-aos="fade-up" data-aos-delay="500">
-                    <a href="https://landing-page-twd.vercel.app/" target="_blank"> <img src="/src/img/site-twd.png"
-                            alt="" srcset=""> </a>
-                    <div class="card-main">
-                        <h5> Site The Walking Dead </h5>
-                        <a href="https://github.com/wesleysaraivaa/Landing-Page-TWD" target="_blank">
-                            <i class="fa-brands fa-github fa-2x"> </i>
-                        </a>
-                    </div>
-                    <div class="card-text">
-                        <p> Landing page para praticar onde utilizei o tema da série TWD. </p>
-                    </div>
-                </div>
-
-                <div class="projects-cards" data-aos="fade-up" data-aos-delay="600">
-                    <a href="https://login-responsive-red.vercel.app/" target="_blank"> <img
-                            src="/src/img/site-login.png" alt="" srcset=""> </a>
-                    <div class="card-main">
-                        <h5> Pagina de login responsivo </h5>
-                        <a href="https://github.com/wesleysaraivaa/login-responsive" target="_blank">
-                            <i class="fa-brands fa-github fa-2x"> </i>
-                        </a>
-                    </div>
-                    <div class="card-text">
-                        <p> Uma pagina de login responsivo que fiz para praticar. </p>
-                    </div>
-                </div>
-
             </div>
-        </section>
 
-    </main>
+            <div class="projects-cards" data-aos="fade-up" data-aos-delay="500">
+                <a href="https://landing-page-twd.vercel.app/" target="_blank"> <img src="/src/img/site-twd.png" alt=""
+                        srcset=""> </a>
+                <div class="card-main">
+                    <h5> Site The Walking Dead </h5>
+                    <a href="https://github.com/wesleysaraivaa/Landing-Page-TWD" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"> </i>
+                    </a>
+                </div>
+                <div class="card-text">
+                    <p> Landing page para praticar onde utilizei o tema da série TWD. </p>
+                </div>
+            </div>
+
+            <div class="projects-cards" data-aos="fade-up" data-aos-delay="600">
+                <a href="https://login-responsive-red.vercel.app/" target="_blank"> <img src="/src/img/site-login.png"
+                        alt="" srcset=""> </a>
+                <div class="card-main">
+                    <h5> Pagina de login responsivo </h5>
+                    <a href="https://github.com/wesleysaraivaa/login-responsive" target="_blank">
+                        <i class="fa-brands fa-github fa-2x"> </i>
+                    </a>
+                </div>
+                <div class="card-text">
+                    <p> Uma pagina de login responsivo que fiz para praticar. </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <div class="bg-contact">
 
@@ -281,7 +272,7 @@
 
             <div class="contact-content ">
 
-                <div class="contact-row-1" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+                <div class="contact-row-1" data-aos="flip-left" data-aos-delay="500">
                     <div class="contact-row-1-content">
                         <h3> Se preferir pode mandar um email: </h3>
                         <div class="contact-copy-email">
@@ -302,8 +293,8 @@
                 </div>
 
                 <form class="contact-row-2" target="_blank" action="https://formsubmit.co/uniwersotech@gmail.com"
-                    method="POST" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                    <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+                    method="POST" data-aos="flip-right" data-aos-delay="500">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/contatoenviado.html">
                     <input type="hidden" name="_template" value="table">
                     <h3> Ou mande uma mensagem </h3>
                     <div class="input-group">
@@ -332,17 +323,13 @@
             </div>
         </section>
 
-        <section class="footer container">
-
+        <footer class="container">
             <hr>
             <img src="/src/img/Logo Uni.png" alt="Logo uniwersotech" data-aos="flip-up" data-aos-delay="400"
                 data-aos-duration="1800">
             <h4> © Copyright 2024. Designed by <a href="#" target="_blank"> Wesley Saraiva </a> </h4>
+        </footer>
 
-
-        </section>
-
-        <!--==================== SCROLL TOP ====================-->
         <a href="#" class="scrollup" id="scroll-up">
             <i class="fa-solid fa-arrow-up scrollup_icon"></i>
         </a>

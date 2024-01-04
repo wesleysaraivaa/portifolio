@@ -25,7 +25,7 @@
 li {
     font-size: clamp(.8rem, .4rem + 1.1vw, 1rem);
     color: rgb(255 255 255 / 75%);
-    text-align: center
+    text-align: start;
 }
 
 .services-content {
@@ -37,6 +37,7 @@ li {
 }
 
 .services-card {
+    min-width: 280px;
     position: relative;
     background-color: var(--bg-cards);
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
